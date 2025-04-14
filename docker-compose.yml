@@ -3,12 +3,12 @@ version: "3.8"
 services:
   app:
     build:
-      context: ./app
+      context: ./src
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
     volumes:
-      - ./app:/app
+      - ./src/app:/app
     environment:
       - DB_HOST=mysql
       - DB_PORT=3306
