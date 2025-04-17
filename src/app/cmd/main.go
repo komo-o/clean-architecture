@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "src/app/infra"
 
 func main() {
-	fmt.Println("Hello World!")
+	infra.Router.Run()
 }
